@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.opentable</groupId>
+    <artifactId>otj-parent-spring</artifactId>
+    <version>85</version>
+  </parent>
+
+  <scm>
+    <connection>scm:git:git://github.com/opentable/${project.artifactId}.git</connection>
+    <developerConnection>scm:git:git@github.com:opentable/${project.artifactId}.git</developerConnection>
+    <url>http://github.com/opentable/${project.artifactId}</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <groupId>com.opentable.vendor</groupId>
+  <artifactId>jnasockopt</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <description>JNA access to setsockopt(2)</description>
+
+  <properties>
+    <basepom.check.skip-all>true</basepom.check.skip-all>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>net.java.dev.jna</groupId>
+        <artifactId>jna</artifactId>
+        <version>4.4.0</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <dependencies>
+    <dependency>
+      <groupId>net.java.dev.jna</groupId>
+      <artifactId>jna</artifactId>
+    </dependency>
+  </dependencies>
+</project>
