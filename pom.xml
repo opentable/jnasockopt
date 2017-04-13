@@ -11,12 +11,12 @@
     <connection>scm:git:git://github.com/opentable/${project.artifactId}.git</connection>
     <developerConnection>scm:git:git@github.com:opentable/${project.artifactId}.git</developerConnection>
     <url>http://github.com/opentable/${project.artifactId}</url>
-    <tag>jnasockopt-1.0.0</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <groupId>com.opentable.vendor</groupId>
   <artifactId>jnasockopt</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1-SNAPSHOT</version>
   <description>JNA access to setsockopt(2)</description>
 
   <properties>
